@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+
+h1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-53%, +100%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.vote-opt {
+    background-color: rgba(0,0,0,0.1);
+    text-decoration: none;
+    font-size: 0.96rem; 
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 3px 6px; 
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.poll-container {
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.poll-card {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -5%);
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    align-items: left;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 30%;
+    min-height: 340px;
+    box-shadow: 0 0px 20px rgba(0,0,0,0.4);
+    font-size: 1.2rem;
+    padding: 2.5%;
+    margin-bottom: 2%;
+    text-align: left;
+    font-family: 'Hahmlet', serif;
+}
+
+.poll-card label { 
+    cursor: pointer; 
+    display: inline-block; 
+    padding: 3px 10px;
+    margin: 8px 0; 
+    width: 30; 
+    font-size: 1.2rem;
+}
+
+.poll-card input {
+    font-size: 0.96rem; 
+    border: 1px solid #ccc;
+    padding: 3px 6px; 
+    margin: 8px 0;
+    border-radius: 5px;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.radio-buttons label {
+    padding: 1px 10px;
+    margin: 4px 0; 
+}
+
+.radio-buttons input {
+    margin-left: 5%; 
+}
+
+ul {
+    padding: 9px 10px;
+    text-align: left;
+    margin: 5px;
+    border: 5px;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 5px;
+}
