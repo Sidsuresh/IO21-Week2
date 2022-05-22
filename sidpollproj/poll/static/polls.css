@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
 
 h1{
-    position: absolute;
-    left: 50%;
-    transform: translate(-53%, +100%);
+    position: relative;
+    left: 25%;
+}
+
+.ptit{
+    position: relative;
+    left: 48%;
 }
 
 a {
@@ -29,9 +33,9 @@ a {
 }
 
 .poll-card {
-    position: absolute;
-    left: 50%;
-    top: 25%;
+    position: relative;
+    left: 18%;
+    top: 30%;
     transform: translate(-50%, -5%);
     display: flex;
     justify-content: space-evenly;
