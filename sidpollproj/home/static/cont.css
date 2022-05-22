@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.contact-container {
-    margin: 7%;
-}
-
 .contact-title{
     font-size: 40px;
     font-weight: bold;

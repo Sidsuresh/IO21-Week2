@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% load static %}
+        <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+        {% block dependencies%}
+            replace
+        {% endblock%}
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-content">
+                <h1>SSN.</h1>
+                <ul>
+                    <li><a class="btn" href="http://127.0.0.1:8000/">Home</a></li>                   
+                    <li><a class="btn" href="http://127.0.0.1:8000/contact">Contact</a></li>
+                    <li><a class="btn" href="http://127.0.0.1:8000/about">About Me</a></li>
+                </ul> 
+            </div>
+        </div>
+        {% block content %}
+            replaced
+        {% endblock %}
+        <div class="footer">
+            Socials
+            <div class="icons">
+                <a href="https://github.com/Sidsuresh"><i class="fa-brands fa-github" ></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.facebook.com/sid.suresh.24/"><i class="fa-brands fa-facebook-square"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/sidsuresh24/"><i class="fa-brands fa-instagram"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/siddharth-suresh-nair-a664b521a/"><i class="fa-brands fa-linkedin"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+            </div> 
+        </div>
+    </body>
+</html>

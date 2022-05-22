@@ -3,11 +3,11 @@ from django.shortcuts import render
 from django.template import RequestContext
 
 # Create your views here.
-def home_view(request, *args, **kwargs):
+def home(request, *args, **kwargs):
     return render(request, "index.html", {})
 
-def contact_view(request, *args, **kwargs):
+def contact(request, *args, **kwargs):
     return render(request, "contact.html", {})
 
-def about_view(request, *args, **kwargs):
+def about(request, *args, **kwargs):
     return render(request, "aboutme.html", {})

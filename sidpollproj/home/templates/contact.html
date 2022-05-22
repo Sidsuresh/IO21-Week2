@@ -1,30 +1,35 @@
+{% extends "main.html" %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        {% load static%}
-        <script type="text/javascript" src="{% static 'app.js' %}"></script>
-        <link rel="stylesheet" type="text/css" href="{% static 'contact.css' %}">
-        <title>Contact Me</title>
+        {% block dependencies%}
+            {% load static %}
+            <script type="text/javascript" src="{% static 'app.js' %}"></script>
+            <link rel="stylesheet" type="text/css" href="{% static 'cont.css' %}">
+            <title>Contact Me</title>
+        {% endblock dependencies%}
     </head>
     <body>
-        <div id='Contact' class='contact-container'>
-            <div class='contact-title'>
-                CONTACT-ME...
-            </div>
-            <div class='contact-content'>
-                <div class='contact-form'>
-                    <form name="Contact_Form" method="POST">{% csrf_token %}
-                        <input placeholder='Your Name' type='text' id='from_name' required/>
-                        <input placeholder='Your Email' type='email' id='reply_to' required/>
-                        <textarea placeholder='Your Message' id='message' required></textarea>
-                        <input type='submit' id="sub_Button" value="Send Email" onclick="sendEmail()"/>
-                    </form>
+        {% block content%}
+            <div id='Contact' class='contact-container'>
+                <div class='contact-title'>
+                    CONTACT-ME...
+                </div>
+                <div class='contact-content'>
+                    <div class='contact-form'>
+                        <form name="Contact_Form" method="POST">{% csrf_token %}
+                            <input placeholder='Your Name' type='text' id='from_name' required/>
+                            <input placeholder='Your Email' type='email' id='reply_to' required/>
+                            <textarea placeholder='Your Message' id='message' required></textarea>
+                            <input type='submit' id="sub_Button" value="Send Email" onclick="sendEmail()"/>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        {% endblock content%}
     </body>
 </html>
