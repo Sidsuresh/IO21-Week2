@@ -6,8 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% block dependencies%}
-            {% load static %}
-            <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        {% load static %}
+            <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+            <link rel="stylesheet" type="text/css" href="{% static 'sty.css' %}">
             <title>Siddharth Suresh Nair</title>
         {% endblock dependencies%}
     </head>
@@ -44,10 +45,10 @@
                         <div class='profile-picture-background'></div>
                     </div>
 
-                    <div class="takebtn">
-                        
-                    </div>
+                </div>
 
+                <div class="takebtn">
+                    <a href="http://127.0.0.1:8000/polls/">Take a Poll About Me<i class="fa-solid fa-caret-right"></i></a>
                 </div>
 
             </div>
